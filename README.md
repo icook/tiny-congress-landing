@@ -6,7 +6,7 @@ Landing page for [TinyCongress](https://github.com/icook/tiny-congress) - a mode
 
 This repository contains the landing page for the TinyCongress project. For the main application repository, visit [tiny-congress](https://github.com/icook/tiny-congress).
 
-**Live site**: [https://icook.github.io/tiny-congress-landing/](https://icook.github.io/tiny-congress-landing/)
+**Live site**: [https://tinycongress.com](https://tinycongress.com)
 
 ## Development
 
