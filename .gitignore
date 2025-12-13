@@ -22,6 +22,5 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Package manager files
-package-lock.json
+# Package manager files (keep package-lock.json for npm caching)
 yarn.lock
