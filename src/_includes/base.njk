@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TinyCongress - A modern web community platform for collaborative decision-making and polling">
+  <meta name="keywords" content="polling, community platform, web app, react, rust, graphql">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/tiny-congress-landing/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="/tiny-congress-landing/" class="nav-brand">Tiny Congress</a>
+      <div class="nav-links">
+        <a href="https://github.com/icook/tiny-congress-2">GitHub</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tiny Congress</p>
+      <p>
+        <a href="https://github.com/icook/tiny-congress-2">Main Repository</a> |
+        <a href="https://github.com/icook/tiny-congress-landing">Landing Page Source</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

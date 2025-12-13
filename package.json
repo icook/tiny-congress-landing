@@ -1,0 +1,24 @@
+{
+  "name": "tiny-congress-landing",
+  "version": "1.0.0",
+  "description": "Landing page for TinyCongress - A web community platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icook/tiny-congress-landing.git"
+  },
+  "keywords": ["tinycongress", "landing-page", "eleventy"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icook/tiny-congress-landing/issues"
+  },
+  "homepage": "https://icook.github.io/tiny-congress-landing/",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
