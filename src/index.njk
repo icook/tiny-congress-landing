@@ -1,37 +1,106 @@
 ---
 layout: base.njk
-title: Tiny Congress - A Web Community Platform
+title: Tiny Congress - Trusted Communication at Internet Scale
 ---
-<section class="hero">
-  <div class="container">
+<article class="page">
+  <header class="hero">
     <h1>Tiny Congress</h1>
-    <p>A modern web community platform for collaborative decision-making and polling</p>
-    <a href="https://github.com/icook/tiny-congress" class="cta-button">View on GitHub</a>
-  </div>
-</section>
+    <p class="headline">Trusted communication at internet scale.</p>
+    <p class="subheadline">Open infrastructure for identity, reputation, and large-scale consensus.</p>
+    <p class="intro">The internet is great at broadcasting opinions, but terrible at expressing trust. TinyCongress is an open-source project to help people understand who they're hearing from, why they should trust them, and where genuine consensus exists.</p>
+  </header>
 
-<section class="content">
-  <div class="container">
-    <h2>About the Project</h2>
-    <p>TinyCongress is a work-in-progress web community platform that enables users to create accounts, manage keys, and participate in polling rooms. Built with modern technologies for a fast, reliable user experience.</p>
+  <nav class="toc">
+    <ul>
+      <li><a href="#whats-broken">What's broken</a></li>
+      <li><a href="#vision">The vision</a></li>
+      <li><a href="#how-it-exists">How it exists</a></li>
+      <li><a href="#what-were-building">What we're building</a></li>
+      <li><a href="#what-this-is-not">What this is not</a></li>
+      <li><a href="#get-involved">Get involved</a></li>
+    </ul>
+  </nav>
 
-    <h2>Core Technologies</h2>
-    <div class="tech-stack">
-      <div class="tech-item">
-        <h3>React Frontend</h3>
-        <p>Simple, modern UI built with React and Mantine component library for creating accounts and participating in polling rooms.</p>
-      </div>
-      <div class="tech-item">
-        <h3>Rust Backend</h3>
-        <p>High-performance GraphQL API powered by axum, tokio, and sqlx, implementing polling room runtime and CRUD operations.</p>
-      </div>
-      <div class="tech-item">
-        <h3>Kubernetes Development</h3>
-        <p>Managed by Skaffold for local dev clusters with hot reload, CI testing, and production image building.</p>
-      </div>
-    </div>
+  <section id="whats-broken">
+    <h2>What's missing today</h2>
+    <ul class="problem-list">
+      <li><strong>Identity without trust signals.</strong> Anonymous speech dominates important conversations.</li>
+      <li><strong>Engagement without consensus.</strong> Platforms optimize outrage for profit, not understanding.</li>
+      <li><strong>Centralized incentives.</strong> Ad-driven systems reward noise over clarity.</li>
+    </ul>
+    <p class="aside">We don't need more speech. We need better signal.</p>
+  </section>
 
-    <h2>Get Involved</h2>
-    <p>This project is under active development. Check out the <a href="https://github.com/icook/tiny-congress">main repository</a> to contribute or follow progress.</p>
-  </div>
-</section>
+  <section id="vision">
+    <h2>A different model for mass communication</h2>
+    <p>TinyCongress explores how trusted identity and explicit reputation can enable large groups to communicate honestly, discover agreement, and disagree productively.</p>
+    <ul>
+      <li>Opinions are signed, not anonymous.</li>
+      <li>Trust is personal, contextual, and explicit.</li>
+      <li>Consensus is measured, not inferred by engagement.</li>
+    </ul>
+    <p class="aside">This is infrastructure, not a social network.</p>
+  </section>
+
+  <section id="how-it-exists">
+    <h2>A public utility, not a platform</h2>
+    <p>TinyCongress aspires to follow the model of projects like Let's Encrypt: free, open-source infrastructure operated in the public interest. No ads. No engagement metrics. Funded by donations and sponsorships to keep incentives aligned with usefulness, not addiction.</p>
+    <ul>
+      <li>Open source by default.</li>
+      <li>Neutral base layer.</li>
+      <li>Designed to be boring, reliable, and cheap to operate.</li>
+    </ul>
+  </section>
+
+  <section id="what-were-building">
+    <h2>Two components</h2>
+
+    <h3>Identity and reputation base layer</h3>
+    <p>A cryptographic identity system where people can make signed attestations about trust, security posture, and reputation across multiple dimensions.</p>
+    <ul>
+      <li>Device-based keys</li>
+      <li>Explicit endorsements and denouncements</li>
+      <li>Personal trust graphs, not global scores</li>
+    </ul>
+
+    <h3>A communication demo</h3>
+    <p>An experimental interface that shows what becomes possible when trust and identity are first-class primitives.</p>
+    <ul>
+      <li>Structured polling instead of comment threads</li>
+      <li>Consensus discovery at scale</li>
+      <li>Views filtered by who you trust</li>
+    </ul>
+  </section>
+
+  <section id="what-this-is-not">
+    <h2>What this is not</h2>
+    <ul>
+      <li>Not a social credit system.</li>
+      <li>Not a replacement for elections.</li>
+      <li>Not an algorithmic truth machine.</li>
+      <li>Not optimized for growth or engagement.</li>
+    </ul>
+  </section>
+
+  <section id="get-involved">
+    <h2>Get involved</h2>
+    <p>TinyCongress is in early development. If this resonates, we'd love to hear from you.</p>
+
+    <form action="https://formspree.io/f/xldqvwwo" method="POST" class="signup-form">
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="alpha" value="yes">
+          Notify me when an alpha is available
+        </label>
+        <label>
+          <input type="checkbox" name="updates" value="yes">
+          Send me project updates (at most monthly)
+        </label>
+      </div>
+      <div class="form-row">
+        <input type="email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Sign up</button>
+      </div>
+    </form>
+  </section>
+</article>
