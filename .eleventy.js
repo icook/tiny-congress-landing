@@ -2,6 +2,10 @@ module.exports = function(eleventyConfig) {
   // Copy the css directory to the output
   eleventyConfig.addPassthroughCopy("src/css");
 
+  // Copy logo and favicon
+  eleventyConfig.addPassthroughCopy("src/logo.svg");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
+
   // Copy CNAME file for custom domain
   eleventyConfig.addPassthroughCopy("CNAME");
 
