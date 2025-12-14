@@ -139,6 +139,14 @@ a:focus {
 
 .hero h1 {
   font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.hero h1 .logo {
+  height: 1em;
+  width: auto;
 }
 
 .headline {
