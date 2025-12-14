@@ -243,17 +243,20 @@ li {
   margin-bottom: 0.5em;
 }
 
-.problem-list {
+.problem-list,
+.not-list {
   list-style: none;
   padding-left: 0;
 }
 
-.problem-list li {
+.problem-list li,
+.not-list li {
   margin-bottom: 1em;
   padding-left: 0;
 }
 
-.problem-list strong {
+.problem-list strong,
+.not-list strong {
   color: var(--primary-color);
 }
 
