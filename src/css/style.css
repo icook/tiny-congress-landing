@@ -133,9 +133,8 @@ a:focus {
 
 /* Hero */
 .hero {
-  padding: 2rem 0 3rem;
+  padding: 2rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -165,7 +164,6 @@ a:focus {
 .toc {
   padding: 1.5rem 0;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 3rem;
 }
 
 .toc-label {
@@ -210,7 +208,7 @@ a:focus {
 
 /* Sections */
 section {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   border-bottom: 1px solid var(--border-color);
 }
 
