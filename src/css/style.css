@@ -168,6 +168,15 @@ a:focus {
   margin-bottom: 3rem;
 }
 
+.toc-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
 .toc ol {
   list-style: none;
   counter-reset: toc;
@@ -207,6 +216,21 @@ section {
 
 section:last-of-type {
   border-bottom: none;
+}
+
+/* Section headers */
+.section-num {
+  color: var(--text-color-light);
+  font-weight: 400;
+  margin-right: 0.25em;
+}
+
+.section-tagline {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--text-color-light);
+  margin-top: -0.5em;
+  margin-bottom: 1em;
 }
 
 /* Lists */
