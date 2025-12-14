@@ -2,11 +2,23 @@
 
 ## Design Philosophy
 
-**Ultra minimalist.** No navigation bar. Large header with title, short intro, table of contents, then sections. Each section answers exactly one question—if a sentence doesn't answer that question, cut it.
+**Ultra minimalist.** Minimal top bar with just GitHub icon. Large header with title, short intro, table of contents, then sections. Each section answers exactly one question—if a sentence doesn't answer that question, cut it.
 
 ---
 
 ## Page Structure
+
+### 0. Top Bar
+
+Minimal bar at the very top with only a GitHub icon (link to repo) aligned right. No logo, no text, no navigation. Just the icon.
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                    [GitHub] │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
 
 ### 1. Header (Above the Fold)
 
@@ -168,10 +180,11 @@ TinyCongress is in early development. If this resonates, we'd love to hear from 
 ## Visual Design Notes
 
 ### Layout
+- Minimal top bar with GitHub icon (right-aligned)
 - Single column, centered content
 - Max-width ~700px for readability (prose width)
 - Generous vertical spacing between sections
-- No sticky header, no navigation bar
+- Minimal footer with copyright + repo links
 
 ### Typography
 - Large, bold title (maybe 3-4rem)
@@ -226,8 +239,11 @@ TinyCongress is in early development. If this resonates, we'd love to hear from 
 
 ---
 
+## Decisions Made
+
+- **GitHub link:** Minimal top bar with GitHub icon only, right-aligned
+- **Footer:** Keep minimal footer with copyright + repo links
+
 ## Open Questions
 
-1. **Form backend:** What service to use for collecting signups? (Formspree? Google Form? Custom?)
-2. **GitHub link placement:** In TOC area? Footer? Both?
-3. **Footer:** Keep minimal footer with copyright + repo links, or remove entirely?
+1. **Form backend:** Formspree vs Google Form? (Formspree is inline, Google Form links out)
