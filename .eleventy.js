@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
-  // Copy the css directory to the output
+  // Copy the css and js directories to the output
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/js");
 
   // Copy logo and favicon
   eleventyConfig.addPassthroughCopy("src/logo.svg");

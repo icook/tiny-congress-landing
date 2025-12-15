@@ -355,6 +355,121 @@ footer a:hover {
   color: var(--link-color);
 }
 
+/* GitHub Activity Section */
+.github-activity {
+  margin-top: 2rem;
+}
+
+.github-activity h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.github-activity h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+.activity-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+}
+
+.activity-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: var(--bg-color-secondary);
+  border-radius: 0.5rem;
+  min-width: 100px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-color-light);
+  margin-top: 0.25rem;
+}
+
+.recent-commits ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.recent-commits li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+.recent-commits li:last-child {
+  border-bottom: none;
+}
+
+.recent-commits li.loading,
+.recent-commits li.error {
+  color: var(--text-color-light);
+  font-style: italic;
+}
+
+.commit-link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  text-decoration: none;
+  flex: 1;
+  min-width: 0;
+}
+
+.commit-link:hover .commit-message {
+  text-decoration: underline;
+}
+
+.commit-sha {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.8rem;
+  color: var(--link-color);
+  background: var(--bg-color-secondary);
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.2rem;
+  flex-shrink: 0;
+}
+
+.commit-message {
+  color: var(--text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.commit-date {
+  color: var(--text-color-light);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
 /* Utility Classes */
 .sr-only {
   position: absolute;
